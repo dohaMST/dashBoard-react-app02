@@ -1,0 +1,59 @@
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #263043;
+    height: 100vh;
+    overflow-y: hidden;
+
+    .sidebarTitle{
+        font-size: 2rem;
+        font-weight: 800;
+        margin: 2rem;
+        width: fit-content;
+        position: relative;
+       
+        .sidebarBrand{
+            
+            cursor: pointer;
+            .iconHeader{
+                margin-right: .7rem;
+                
+
+            }
+        }
+        .closeIcon{
+            display: none;
+            position: absolute;
+            top: -1rem;
+            right:-1rem;
+            color: red;
+
+        }
+    }
+    .sidebarList{
+        height: 85%;
+        list-style: none;
+        padding: 0;
+
+        .sidebarListItem{
+           
+            .icon{
+                margin-right: .5rem;
+            }
+            padding: 1rem;
+            transition: .3s ease-in-out;
+            &:hover{
+                background-color: #b6b3b3;
+                a{
+                    color: #fff;
+                }
+            }
+            a{
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                color: #9e9ea4;
+            }
+        }
+    }
+}
